@@ -1,0 +1,16 @@
+{
+	"name":"Article to google docs",
+	"version":"0.0.1",
+	"manifest_version":2,
+	"description":"Download all internet",
+	"browser_action":{
+		"default_icon":"icon.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions":[
+		"http://*",
+		"https://*"
+	]
+}
