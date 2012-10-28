@@ -10,7 +10,14 @@
 		"scripts": ["background.js"]
 	},
 	"permissions":[
-		"http://*",
-		"https://*"
+		"http://*/*",
+		"https://*/*"
+	],
+	"content_scripts":[
+		{
+			"matches":["http://*/*","https://*/*"],
+			"css":["content/style/style.css"],
+			"js":["content/js/utils.js","content/js/togodocs.js","content/js/client.js"]
+		}
 	]
 }

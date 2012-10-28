@@ -1,5 +1,6 @@
 chrome.browserAction.onClicked.addListener(function(tab){
-	var message = "hello world !!!\n";
-	message += "from page: "   + tab.url ;
-	alert(message);
+	chrome.tabs.sendRequest(tab.id, {task:'dosome'}, function(result){
+		console.log("answer from content script: ",result);
+	});
 });
+

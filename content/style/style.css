@@ -1,0 +1,20 @@
+.togodocs-wrap{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 50px;
+	background: rgba(0,0,0,0.4);
+	z-index: 1000;
+	-webkit-transform: translate3d(0,-50px,0);
+	-webkit-transition: all 500ms;
+}
+
+.togodocs-wrap.togodocs-active{
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.togodocs-select-button{
+	margin: 10px 0 0 10px;
+	font-size: 26px;
+}
